@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "dev:ts": "tsc -b -w",
     "dev:convex": "npx convex dev",
-    "build": "vite build",
+    "build": "vite build && nitropack build",
     "start": "node .output/server/index.mjs",
     "format": "prettier --write .",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
@@ -38,7 +38,8 @@
     "@tailwindcss/vite": "^4.1.18",
     "tailwindcss": "^4.1.18",
     "vite-tsconfig-paths": "^6.0.5",
-    "@vitejs/plugin-react": "^5.1.3"
+    "@vitejs/plugin-react": "^5.1.3",
+    "nitropack": "^2.13.4"
   },
   "devDependencies": {
     "@convex-dev/eslint-plugin": "^1.1.1",
